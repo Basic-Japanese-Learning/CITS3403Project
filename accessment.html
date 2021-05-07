@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/access.css">
+    <script src="js/access.js"></script>
+</head>
+
+<body onload="timedCount()">    
+    <div class="red"><span onload = "resttime()">Time Left:  <span id="restoftime"></span><span> seconds</span></div>
+    <form id="q" action ="form_action.asp" name="form0">
+    <div>
+    <h4>1. What is the romaji of "ヌ" (such as "ga" is the romaji of "が")</h4>
+
+        <ol >
+            <li><input type="radio" name="q1" value="no"> no </li>
+            <li><input type="radio" name="q1" value="nu"> nu </li>
+            <li><input type="radio" name="q1" value="ne"> ne </li>
+            <li><input type="radio" name="q1" value="mo"> mo </li>
+        </ol>
+    
+   </div>
+   <div>
+    <h4>2. What are the romaji of "ぬ" and "め" in sequence</h4>
+    
+        <ol>
+            <li><input type="radio" name="q2" value="numu"> nu mu </li>
+            <li><input type="radio" name="q2" value="munu"> mu nu </li>
+            <li><input type="radio" name="q2" value="nume"> nu me </li>
+            <li><input type="radio" name="q2" value="menu"> me nu </li>
+        </ol>
+   
+   </div>
+   <div>
+    <h4>3. Which one is the katakana of “ne"</h4>
+    
+        <ol>
+            <li><input type="radio" name="q3" value="ネ"> ネ </li>
+            <li><input type="radio" name="q3" value="ね"> ね</li>
+            <li><input type="radio" name="q3" value="レ"> レ </li>
+            <li><input type="radio" name="q3" value="れ"> れ</li>
+        </ol>
+    
+   </div>
+   <div>
+    <h4>4. Which one is the hiragana of “ヲ"</h4>
+    
+        <ol>
+            <li><input type="radio" name="q4" value="の"> の </li>
+            <li><input type="radio" name="q4" value="フ"> フ</li>
+            <li><input type="radio" name="q4" value="ふ"> ふ</li>
+            <li><input type="radio" name="q4" value="れ"> れ</li>
+        </ol>
+    
+   </div>
+   <div>
+    <h4>5. Which choices is the romaji of "が" and "カ"</h4>
+    
+        <ol>
+            <li><input type="radio" name="q5" value="ネ"> ga ka </li>
+            <li><input type="radio" name="q5" value="ね"> ga ga</li>
+            <li><input type="radio" name="q5" value="レ"> ka ka </li>
+            <li><input type="radio" name="q5" value="れ"> ka ga</li>
+        </ol>
+   
+   </div>
+   <p class="red">Please do not type space or it will be judged as wrong</p>
+   <div>
+    <h4>6. Please input katakana of ”の"</h4>
+    
+    <input type="text">
+  
+   </div>
+   <div>
+    <h4>7. Please input katakana of ”へ"</h4>
+    
+    <input type="text">
+    
+   </div>
+   <div>
+    <h4>8. Please input hiragana of ”タ"</h4>
+    
+    <input type="text">
+   
+   </div> 
+   <div>
+    <h4>9. Please input katakana of ”ポ"</h4>
+   
+    <input type="text">
+   
+   </div>
+   <div>
+    <h4>10. Please input katakana of ”ン"</h4>
+    
+    <input type="text">
+   
+   </div>
+   <div class="h">
+   </div>  
+  <input type="submit" value="Submit"></br>
+  <input type="submit" value="Save">
+</form>
+</body>
+
+</html>
