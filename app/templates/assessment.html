@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/access.css')}}">
+    <script src="{{ url_for('static', filename='js/access.js')}}"></script>
+</head>
+
+<body onload="timedCount()">    
+    <div class="red"><span onload = "resttime()">Time Left:  <span id="restoftime"></span><span> seconds</span></div>
+    <div class="ans_form">
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.q1.label }}<br>
+                {{ form.q1 }}
+            </p>
+            <p>
+                {{ form.q2.label }}<br>
+                {{ form.q2 }}
+            </p>
+            <p>
+                {{ form.q3.label }}<br>
+                {{ form.q3 }}
+            </p>
+            <p>
+                {{ form.q4.label }}<br>
+                {{ form.q4 }}
+            </p>
+            <p>
+                {{ form.q5.label }}<br>
+                {{ form.q5 }}
+            </p>
+            <p class="red">Note: You only need to type 1 Japanese character</p>
+            <p>
+                {{ form.q6.label }}<br>
+                {{ form.q6(size=36) }}
+            </p>
+            <p>
+                {{ form.q7.label }}<br>
+                {{ form.q7(size=36) }}
+            </p>
+            <p>
+                {{ form.q8.label }}<br>
+                {{ form.q8(size=36) }}
+            </p>
+            <p>
+                {{ form.q9.label }}<br>
+                {{ form.q9(size=36) }}
+            </p>
+            <p>
+                {{ form.q10.label }}<br>
+                {{ form.q10(size=36) }}
+            </p>
+            <p>{{ form.submit() }}</p>
+
+
+            
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-3.4.1-dist/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/access.css')}}">
+    <title>Home Page</title>
+
+     <script src="{{ url_for('static', filename='bootstrap-3.4.1-dist/js/bootstrap.min.js')}}"></script>
+</head>
+
+<body>
+    <header class="wz">
+        <div style="height: 10px;"></div>
+        <div class="container mycheng" style="width: 100%;">
+            <div class="container" style= "width: 100%; height: 40px;">
+                <div class="col-lg-2 col-md-4 col-sm-6"><a href="{{ url_for('home')}}" target="_self" class="navigation">Home</a></div>
+                <div class="col-lg-2 col-md-4 col-sm-6"><a href="{{ url_for('learn')}}" target="_self" class="navigation">Course</a></div>
+                <div class="col-lg-2 col-md-4 col-sm-6"><a href="{{ url_for('assessment_home')}}" target="_self" class="navigation">Assessment</a></div>
+                <div class="col-lg-2 col-md-4 col-sm-6"><a href="{{ url_for('table')}}" target="_self" class="navigation">Statistical results</a></div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    {% if current_user.is_anonymous %}
+                    <a href="{{ url_for('login') }}" class="login navigation" target="_self">Login</a>
+                    {% else %}
+                    <a class="navigation"> Hi, {{ current_user.username }}! </a>
+                    <a href="{{ url_for('logout') }}" class="login navigation" target="_self">Logout</a>
+                    {% endif %}
+                    <a href="{{ url_for('register') }}" class="register navigation" target="_self">Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div style="height: 250px;"></div>
+    <div style="text-align: center;">      
+        <!-- <a href="assessment.html"><input type = "button" value="Begin" style="color: black;"></a> -->
+        <a href="{{ url_for('assessment')}}" class="btn">Begin</a>
+        <div>
+            <div class="r">
+                 Click begin to start assessment(your marks will not be record if you do not log in)
+            </div>
+            <ul class="r">
+                <li>You only have 10 minutes to finish this assessment</li>
+                <li>There are five multiple-choice questions and five gap-fill questions</li>
+             </ul>
+        </div>
+    </div>  
+</body>
+
+</html>

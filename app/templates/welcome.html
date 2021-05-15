@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shouye.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-3.4.1-dist/css/bootstrap.min.css') }}">
+</head>
+
+<body class="home_banner_area"> 
+    
+        <div class="banner_inner">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h3>Welcome! <br />This website can help you learn some basic Janpanese.</h3>
+                    <p>We will start with the Fifty tone diagram and test your learning results.</p>
+                    <a class="btn" href="{{ url_for('home') }}">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
