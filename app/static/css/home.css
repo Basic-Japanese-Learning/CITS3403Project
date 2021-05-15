@@ -1,0 +1,28 @@
+       .header{
+           font-size: large;
+       }
+       .login{
+           position: absolute;
+           right: 100px;
+       }
+       .register{
+           position: absolute;
+           right: 0px;
+       }
+       .navigation{
+           font-size: 17px;
+           color: gray;
+       }
+       .introduction{
+           font-size: 17px;
+           padding: 2em;
+           color: black;
+           font-weight: bold;
+       }
+       .anchor{
+
+           font-size: 20px;
+       }
+       body{
+           background-image: url(../images/3.jpg);
+       }

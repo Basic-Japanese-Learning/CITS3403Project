@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/register.css">
+    <link rel="stylesheet" href="../static/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <script src="../static/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+    </script>
+    <script src="{{ url_for('static', filename='js/reg.js') }}"></script>
+</head>
+
+<body>
+    <header class="wz">
+        <div style="height: 10px;"></div>
+        <div class="container mycheng" style="width: 100%;">
+            <div class="container" style= "width: 100%; height: 40px;">
+                <div class="col-lg-2 col-md-4 col-sm-6"><a href="/home" target="_self" class="navigation">Home</a></div>
+                <div class="col-lg-2 col-md-4 col-sm-6"><a href="/learn" target="_self" class="navigation">Course</a></div>
+                <div class="col-lg-2 col-md-4 col-sm-6"><a href="/assessment_home" target="_self" class="navigation">Assessment</a></div>
+                <div class="col-lg-2 col-md-4 col-sm-6"><a href="/table" target="_self" class="navigation">Statistical results</a></div>
+                <div class="col-lg-4 col-md-4 col-sm-6"><a href="/register" class="register navigation" target="_self">Register</a></div>
+            </div>
+        </div>
+    </header>
+    <div class="w">
+        <div class="registerarea">
+            <h1>Account Login</h1>
+            <div class="reg_form">
+                <form action="" method="post" novalidate>
+                    {{ form.hidden_tag() }}
+                    <ul>
+                    <li>
+                        <label for="email">*E-mail:</label>
+                        <input id="email" name="email" class="inp" required size="36" type="text" value="">
+                        {% for error in form.email.errors %}
+                        <span class="r">[{{ error }}]</span>
+                        {% endfor %}
+                    </li>
+                    <li>
+                        <label for="password">*Password:</label>
+                        <input id="password" name="password" class="inp" required size="36" type="password" value="">
+                        {% for error in form.password.errors %}
+                        <span class="r">[{{ error }}]</span>
+                        {% endfor %}
+                    </li>
+                    <li class="agree">
+                        <input id="remember_me" name="remember_me" type="checkbox" value="y"> Remember Me
+                    </li>
+                    <li>
+                    <button class="btn">submit</button>
+                    </li>
+                    </ul>
+                        {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                        <ul class="alert alert-warning">
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% endwith %}
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

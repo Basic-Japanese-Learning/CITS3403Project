@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/assess.css">
+    <script src="../static/js/assess.js"></script>
+</head>
+
+<body onload="timedCount()">
+    <div class="red"><span onload = "resttime()" >Time Left:  <span id="restoftime"></span><span> seconds</span></div>
+    <div class="ans_form">
+        <form action="" method="post" class="jz" novalidate>
+            {{ form.hidden_tag() }}
+            <div>
+                <label for="q1">1. What is the romaji of &#34;ヌ&#34; (such as &#34;ga&#34; is the romaji of &#34;が&#34;)</label><br>
+                <ol id="q1">
+                    <li><input id="q1-0" name="q1" type="radio" value="no"> <label for="q1-0">no</label></li>
+                    <li><input id="q1-1" name="q1" type="radio" value="nu"> <label for="q1-1">nu</label></li>
+                    <li><input id="q1-2" name="q1" type="radio" value="ne"> <label for="q1-2">ne</label></li>
+                    <li><input id="q1-3" name="q1" type="radio" value="mo"> <label for="q1-3">mo</label></li>
+                </ol>
+            </div>
+            <div>
+                <label for="q2">2. What are the romaji of &#34;ぬ&#34; and &#34;め&#34; in sequence</label><br>
+                <ol id="q2">
+                    <li><input id="q2-0" name="q2" type="radio" value="numu"> <label for="q2-0">numu</label></li>
+                    <li><input id="q2-1" name="q2" type="radio" value="munu"> <label for="q2-1">munu</label></li>
+                    <li><input id="q2-2" name="q2" type="radio" value="nume"> <label for="q2-2">nume</label></li>
+                    <li><input id="q2-3" name="q2" type="radio" value="menu"> <label for="q2-3">menu</label></li>
+                </ol>
+            </div>
+            <div>
+                <label for="q3">3. Which one is the katakana of “ne&#34;</label><br>
+                <ol id="q3"><li><input id="q3-0" name="q3" type="radio" value="ネ"> <label for="q3-0">ネ</label></li>
+                    <li><input id="q3-1" name="q3" type="radio" value="ね"> <label for="q3-1">ね</label></li>
+                    <li><input id="q3-2" name="q3" type="radio" value="レ"> <label for="q3-2">レ</label></li>
+                    <li><input id="q3-3" name="q3" type="radio" value="れ"> <label for="q3-3">れ</label></li>
+                </ol>
+            </div>
+            <div>
+                <label for="q4">4. Which one is the hiragana of “ヲ&#34;</label><br>
+                <ol id="q4"><li><input id="q4-0" name="q4" type="radio" value="を"> <label for="q4-0">を</label></li>
+                    <li><input id="q4-1" name="q4" type="radio" value="フ"> <label for="q4-1">フ</label></li>
+                    <li><input id="q4-2" name="q4" type="radio" value="ふ"> <label for="q4-2">ふ</label></li>
+                    <li><input id="q4-3" name="q4" type="radio" value="れ"> <label for="q4-3">れ</label></li>
+                </ol>
+            </div>
+            <div>
+                <label for="q5">5. Which choices is the romaji of &#34;が&#34; and &#34;カ&#34;</label><br>
+                <ol id="q5"><li><input id="q5-0" name="q5" type="radio" value="ga ka"> <label for="q5-0">ga ka</label></li>
+                    <li><input id="q5-1" name="q5" type="radio" value="ga ga"> <label for="q5-1">ga ga</label></li>
+                    <li><input id="q5-2" name="q5" type="radio" value="ka ka"> <label for="q5-2">ka ka</label></li>
+                    <li><input id="q5-3" name="q5" type="radio" value="ka ga"> <label for="q5-3">ka ga</label></li>
+                </ol>
+            </div>
+            <p class="red">Note: You only need to type 1 Japanese character</p>
+            <div>
+                <label for="q6">6. Please input katakana of ”の&#34;</label><br>
+                <input id="q6" name="q6" size="36" type="text" value="">
+            </div>
+            <div>
+                <label for="q7">7. Please input katakana of ”へ&#34;</label><br>
+                <input id="q7" name="q7" size="36" type="text" value="">
+            </div>
+            <div>
+                <label for="q8">8. Please input hiragana of ”タ&#34;</label><br>
+                <input id="q8" name="q8" size="36" type="text" value="">
+            </div>
+            <div>
+                <label for="q9">9. Please input katakana of ”ポ&#34;</label><br>
+                <input id="q9" name="q9" size="36" type="text" value="">
+            </div>
+            <div>
+                <label for="q10">10. Please input hiragana of ”ン&#34;</label><br>
+                <input id="q10" name="q10" size="36" type="text" value="">
+            </div>
+            <input id="submit" name="submit" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
