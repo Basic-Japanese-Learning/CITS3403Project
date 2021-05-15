@@ -1,5 +1,6 @@
 # CITS3403Project
-A flask application for cits3403 Project. We build an online formative assessment for basic Japanese.
+This flask application meets the needs of cits3403 Project. 
+This website is built for learning some very basic Japanese. We build an online formative assessment for basic Japanese.
 
 ## Getting Started
 
