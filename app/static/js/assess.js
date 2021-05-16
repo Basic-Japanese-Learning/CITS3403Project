@@ -1,12 +1,25 @@
-var rest = 600;
+var total_time = localStorage.getItem("resttime") ? localStorage.getItem("resttime") :  600;
+var rest = total_time;
+
 function timedCount(){
-aa = window.setTimeout(submit_,1000 * 60 * 10);
+aa = window.setTimeout(submit_,1000 * 60 *10);
 setInterval("countdown()",1000)
 }
-function submit_(){
-   form0.submit();
+
+function prompt(){
+   alert('Your anwsers have been submitted!');
 }
+
+function submit_(){
+   localStorage.clear();
+   document.getElementById('submit').click();
+}
+
 function countdown(){
-rest = rest - 1;
-document.getElementById("restoftime").innerHTML = rest;
+   total_time = total_time - 1;
+   localStorage.setItem("resttime",total_time);
+   if(total_time<=0){
+      submit_();
+   }
+   document.getElementById("restoftime").innerHTML = localStorage.getItem("resttime");
 }
