@@ -1,11 +1,11 @@
 # CITS3403Project
-This flask application meets the needs of cits3403 Project. 
+[Github]https://github.com/Basic-Japanese-Learning/CITS3403Project
 
-This website is built for learning some very basic Japanese. 
+This flask application meets the requirements of cits3403 Project. 
 
-We implement the login and registration functions, and store users by connecting to the database.
+This website is built for learning some very basic Japanese -- the fifty sounds diagram. 
 
-We build an online formative assessment for basic Japanese. After passing the evaluation, you can view each of your historical scores.
+You can register/login as a user. We built an online formative assessment for basic Japanese. After passing the assessment, you can view each of your historical scores.
 
 ![image](https://user-images.githubusercontent.com/81564573/118383180-3cd0cd80-b62e-11eb-9fea-971b65a0a70f.png)
 
@@ -26,4 +26,7 @@ To exit the environment:
 
 ### Prerequisites
 
-Requires python3, flask, venv, and sqlite
+* Python3
+* venv
+* Jinja2
+* Flask framework (WTForms, SQLAlchemy, Login, Migrate)
