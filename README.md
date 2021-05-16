@@ -36,11 +36,11 @@ To exit the environment:
 
 Ze Zhang(22751078): 
 - Front-end(HTML5, CSS, Javascript, DOM, bootstrap)
-- Home Page, accessment, course
+- Home Page, assessment, course page editing
 
 Changhong Chen(22757737): 
 - Front-end(HTML5, CSS, Javascript, DOM, bootstrap)
-- Register, log in and log out, course
+- Register, login/out, course paging editing
 
 Shiqi Liu(22845648): 
 - Back-end
