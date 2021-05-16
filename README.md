@@ -34,6 +34,26 @@ To exit the environment:
 * Jinja2
 * Flask framework (WTForms, SQLAlchemy, Login, Migrate)
 
+### Contributers
+
+Ze Zhang(22751078): 
+- Front-end
+- HTML/CSS/Javascript editing
+
+Changhong Chen(22757737): 
+- Front-end
+- HTML/CSS/Javascript editing
+
+Shiqi Liu(22845648): 
+- Back-end
+- Page routing
+
+Hengzhi Qiu(22789193): 
+- Back-end
+- Databasing
+- Form Processing
+
+
 ### Acknowledgments
 Built following the [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) by Miguel Grinberg.
 
