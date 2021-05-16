@@ -9,7 +9,7 @@ You will find such elements:
 - History of Japanese.
 - Writing and Speaking session.
 - An assessment regarding the fifty sounds(romaji, hiragana, katakana).
-- User Register，login and logout via Email.
+- User Register, login and logout via Email.
 - Previous assessment records for each user.
 
 ![image](https://user-images.githubusercontent.com/81564573/118383180-3cd0cd80-b62e-11eb-9fea-971b65a0a70f.png)
@@ -35,11 +35,11 @@ To exit the environment:
 ### Contributers
 
 Ze Zhang(22751078): 
-- Front-end(HTML5, CSS, Javascript, DOM, bootstrap)
-- Home Page, assessment, course page editing
+- Front-end
+- Home, assessment, course page editing
 
 Changhong Chen(22757737): 
-- Front-end(HTML5, CSS, Javascript, DOM, bootstrap)
+- Front-end
 - Register, login/out, course page editing
 
 Shiqi Liu(22845648): 
@@ -53,7 +53,7 @@ Hengzhi Qiu(22789193):
 
 ### Prerequisites
 
-* HTML5
+* HTML5, CSS, Javascript, DOM, bootstrap
 * Python3
 * venv
 * Jinja2
