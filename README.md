@@ -18,6 +18,9 @@ Activate the python virtual environment:
 To run the app:
 `$flask run`
 
+To access the website:
+Running on http://127.0.0.1:5000/
+
 To stop the app:
 `$^C`
 
