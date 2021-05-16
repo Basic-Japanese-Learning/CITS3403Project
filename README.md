@@ -35,12 +35,12 @@ To exit the environment:
 ### Contributers
 
 Ze Zhang(22751078): 
-- Front-end
-- HTML/CSS/Javascript editing
+- Front-end(HTML5, CSS, Javascript, DOM, bootstrap)
+- Home Page, accessment, course
 
 Changhong Chen(22757737): 
-- Front-end
-- HTML/CSS/Javascript editing
+- Front-end(HTML5, CSS, Javascript, DOM, bootstrap)
+- Register, log in and log out, course
 
 Shiqi Liu(22845648): 
 - Back-end
@@ -53,6 +53,7 @@ Hengzhi Qiu(22789193):
 
 ### Prerequisites
 
+* HTML5
 * Python3
 * venv
 * Jinja2
