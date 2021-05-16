@@ -40,7 +40,7 @@ Ze Zhang(22751078):
 
 Changhong Chen(22757737): 
 - Front-end(HTML5, CSS, Javascript, DOM, bootstrap)
-- Register, login/out, course paging editing
+- Register, login/out, course page editing
 
 Shiqi Liu(22845648): 
 - Back-end
