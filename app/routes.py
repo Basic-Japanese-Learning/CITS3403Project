@@ -81,7 +81,7 @@ def logout():
 
 @app.route('/feedback?<int:score><string:correct>')
 def feedback(score,correct):
-    return render_template("feedback(2).html", score = score, correct = correct)
+    return render_template("feedback.html", score = score, correct = correct)
 
 def getmark(form):
     score = 0
