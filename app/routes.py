@@ -10,8 +10,6 @@ from werkzeug.urls import url_parse
 from app import db
 from app.forms import RegistrationForm, AnswerForm
 
-
-
 @app.route('/')
 def welcome():
     return render_template("welcome.html")
@@ -50,7 +48,7 @@ def register():
         flash('Congratulations, you are now a registered user!')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
-
+    
 @app.route('/learn')
 def learn():
     return render_template("learn.html")
@@ -70,7 +68,6 @@ def assessment():
         return redirect(url_for('feedback', score = score, correct = correct))
     return render_template("assessment.html", form=form)
 
-
 @app.route('/table')
 @login_required
 def table():
@@ -84,40 +81,39 @@ def logout():
 
 @app.route('/feedback?<int:score><string:correct>')
 def feedback(score,correct):
-    return render_template("feedback.html", score = score, correct = correct)
-
+    return render_template("feedback(2).html", score = score, correct = correct)
 
 def getmark(form):
     score = 0
-    correct = ''
+    correct = []
     if form.q1.data == 'nu':
         score += 10
-        correct += ' 1'
+        correct.append(1)
     if form.q2.data == 'nume':
         score += 10
-        correct += ' 2'
+        correct.append(2)
     if form.q3.data == 'ネ':
         score += 10
-        correct += ' 3'
+        correct.append(3)
     if form.q4.data == 'を':
         score += 10
-        correct += ' 4'
+        correct.append(4)
     if form.q5.data == 'ga ka':
         score += 10
-        correct += ' 5'
+        correct.append(5)
     if form.q6.data == 'ノ':
         score += 10
-        correct += ' 6'
+        correct.append(6)
     if form.q7.data == 'へ':
         score += 10
-        correct += ' 7'
+        correct.append(7)
     if form.q8.data == 'た':
         score += 10
-        correct += ' 8'
+        correct.append(8)
     if form.q9.data == 'ぽ':
         score += 10
-        correct += ' 9'
+        correct.append(9)
     if form.q10.data == 'ん':
         score += 10
-        correct += ' 10'
+        correct.append(10)
     return score, correct
