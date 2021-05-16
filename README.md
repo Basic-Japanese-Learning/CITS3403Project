@@ -19,7 +19,7 @@ To run the app:
 `$flask run`
 
 To access the website:
-Running on http://127.0.0.1:5000/
+Running on ‘localhost’http://127.0.0.1:5000/
 
 To stop the app:
 `$^C`
@@ -32,7 +32,7 @@ To exit the environment:
 * Python3
 * venv
 * Jinja2
-* Flask framework (WTForms, SQLAlchemy, Login, Migrate)
+* Flask framework (including WTForms, SQLAlchemy, Login, Migrate)
 
 ### Contributers
 
