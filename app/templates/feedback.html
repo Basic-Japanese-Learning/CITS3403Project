@@ -7,14 +7,10 @@
     <title>feedback</title>
     <link rel="stylesheet" href="../static/bootstrap-3.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/feed.css">
     <!-- <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css"> -->
     <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
     <script src="{{ url_for('static', filename='js/feed.js')}}"></script>
-    <style>
-      .answer{
-        color: red;
-      }
-    </style>
     <script>
       function myFunc(vars) {
         return vars
@@ -39,27 +35,29 @@
       <div class="col-lg-4 col-md-4 col-sm-6">
       </div>   
   </header>
+  <div class="zj">
   <h1 class="r" onload="show()">The examination is over...
   </h1>
+
   <h2 class = "r">
     You have got question {{correct}} right...
   </h2>
-  <div>
-    <p id = "1">1. What is the romaji of &#34;ヌ&#34;:<span class = "answer">nu</span></p>
-    <p id = "2">2. What are the romaji of &#34;ぬ&#34; and &#34;め&#34; (in sequence)  :<span class = "answer">nu me</span></p>
-    <p id = "3">3. Which one is the katakana of &#34;ne&#34;: <span class = "answer">ネ</span></p>
-    <p id = "4">4. Which one is the hiragana of &#34;ヲ&#34;: <span class = "answer">を</span></p>
-    <p id = "5">5. Which choices is the romaji of &#34;が&#34;: and &#34;カ&#34; <span class = "answer">ga ka</span></p>
-    <p id = "6">6. Please input katakana of &#34;の&#34;: <span class = "answer">ノ</span></p>  
-    <p id = "7">7. Please input katakana of &#34;へ&#34;: <span class = "answer">へ</span></p>
-    <p id = "8">8. Please input hiragana of &#34;タ&#34;: <span class = "answer">た</span></p>
-    <p id = "9">9. Please input katakana of &#34;ポ&#34;: <span class = "answer">ぽ</span></p>
-    <p id = "10">10. Please input hiragana of &#34;ン&#34;: <span class = "answer">ん<span></p>
-  </div>
+    <h3>The following questions are incorrect:</h3>
+    <h3 id = "1">1. What is the romaji of &#34;ヌ&#34;:<span class = "answer">nu</span></h3>
+    <h3 id = "2">2. What are the romaji of &#34;ぬ&#34; and &#34;め&#34; (in sequence)  :<span class = "answer">nu me</span></h3>
+    <h3 id = "3">3. Which one is the katakana of &#34;ne&#34;: <span class = "answer">ネ</span></p>
+    <h3 id = "4">4. Which one is the hiragana of &#34;ヲ&#34;: <span class = "answer">を</span></h3>
+    <h3 id = "5">5. Which choices is the romaji of &#34;が&#34;: and &#34;カ&#34; <span class = "answer">ga ka</span></h3>
+    <h3 id = "6">6. Please input katakana of &#34;の&#34;: <span class = "answer">ノ</span></h3>
+    <h3 id = "7">7. Please input katakana of &#34;へ&#34;: <span class = "answer">へ</span></h3>
+    <h3 id = "8">8. Please input hiragana of &#34;タ&#34;: <span class = "answer">た</span></h3>
+    <h3 id = "9">9. Please input katakana of &#34;ポ&#34;: <span class = "answer">ぽ</span></h3>
+    <h3 id = "10">10. Please input hiragana of &#34;ン&#34;: <span class = "answer">ん<span></h3>
+
   <h3 class = "r">
     So Your final score is {{score}}.
   </h3>
-  
+  </div>
 
 </body>
 </html>
