@@ -1,5 +1,5 @@
 # CITS3403Project
-[Github]https://github.com/Basic-Japanese-Learning/CITS3403Project
+[Github Page](https://github.com/Basic-Japanese-Learning/CITS3403Project)
 
 This flask application meets the requirements of cits3403 Project. 
 
@@ -33,3 +33,8 @@ To exit the environment:
 * venv
 * Jinja2
 * Flask framework (WTForms, SQLAlchemy, Login, Migrate)
+
+### Acknowledgments
+Built following the [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) by Miguel Grinberg.
+
+
